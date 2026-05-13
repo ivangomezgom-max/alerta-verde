@@ -7,7 +7,8 @@
 </head>
 
 <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+    <!-- AQUÍ SE INSERTA: vr-mode-ui="enabled: false" dentro de a-scene -->
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false">
 
         <a-assets>
             <img id="ficha-sano" src="Proyecto_AR/fichas/sano.png">
@@ -31,7 +32,7 @@
             <a-image src="#ficha-actuar" position="0 0.5 0" rotation="-90 0 0" scale="2.5 2.5 2.5"></a-image>
         </a-marker>
 
-        <!-- 4. CUARENTENA (Nombre exacto con espacios según tu captura) -->
+        <!-- 4. CUARENTENA -->
         <a-marker type="pattern" url="Proyecto_AR/markers/pattern-Pasar a curentena.patt">
             <a-image src="#ficha-cuarentena" position="0 0.5 0" rotation="-90 0 0" scale="2.5 2.5 2.5"></a-image>
         </a-marker>
