@@ -7,7 +7,6 @@
 </head>
 
 <body style="margin: 0; overflow: hidden;">
-    <!-- Ajuste de patternRatio a 0.75 para máxima compatibilidad -->
     <a-scene embedded 
              arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono; patternRatio: 0.75;" 
              vr-mode-ui="enabled: false">
@@ -19,24 +18,24 @@
             <img id="ficha-cuarentena" src="Proyecto_AR/fichas/cuarentena.png">
         </a-assets>
 
-        <!-- SANO - Posición centrada y elevada (0 0.5 0) -->
+        <!-- SANO - Escala reducida a 1.2 -->
         <a-marker type="pattern" url="Proyecto_AR/markers/pattern-Ruscus_planta_en_estado_optimo.patt">
-            <a-image src="#ficha-sano" position="0 0.5 0" rotation="-90 0 0" scale="2 2 2"></a-image>
+            <a-image src="#ficha-sano" position="0 0.5 0" rotation="-90 0 0" scale="1.2 1.2 1.2"></a-image>
         </a-marker>
 
         <!-- VIGILAR -->
         <a-marker type="pattern" url="Proyecto_AR/markers/pattern-Eucalypto_baby_blue_Vigilancia.patt">
-            <a-image src="#ficha-vigilar" position="0 0.5 0" rotation="-90 0 0" scale="2 2 2"></a-image>
+            <a-image src="#ficha-vigilar" position="0 0.5 0" rotation="-90 0 0" scale="1.2 1.2 1.2"></a-image>
         </a-marker>
 
         <!-- ACTUAR -->
         <a-marker type="pattern" url="Proyecto_AR/markers/pattern-Estado_actuar_ya_Liriope.patt">
-            <a-image src="#ficha-actuar" position="0 0.5 0" rotation="-90 0 0" scale="2 2 2"></a-image>
+            <a-image src="#ficha-actuar" position="0 0.5 0" rotation="-90 0 0" scale="1.2 1.2 1.2"></a-image>
         </a-marker>
 
-        <!-- CUARENTENA - Recuerda que el nombre en GitHub debe tener guiones, no espacios -->
+        <!-- CUARENTENA - Verifica la mayúscula inicial y los guiones bajos -->
         <a-marker type="pattern" url="Proyecto_AR/markers/pattern-Pasar_a_curentena.patt">
-            <a-image src="#ficha-cuarentena" position="0 0.5 0" rotation="-90 0 0" scale="2 2 2"></a-image>
+            <a-image src="#ficha-cuarentena" position="0 0.5 0" rotation="-90 0 0" scale="1.2 1.2 1.2"></a-image>
         </a-marker>
 
         <a-entity camera></a-entity>
