@@ -10,7 +10,7 @@
 <body style="margin:0; overflow:hidden;">
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
 
-        <!-- 1. SECCIÓN DE ACTIVOS: Aquí se precargan las imágenes para evitar errores de textura -->
+        <!-- 1. SECCIÓN DE ACTIVOS: Precarga de imágenes para evitar errores de textura -->
         <a-assets>
             <img id="ficha-sano" src="fichas/sano.png">
             <img id="ficha-vigilar" src="fichas/vigilar.png">
@@ -18,24 +18,23 @@
             <img id="ficha-cuarentena" src="fichas/cuarentena.png">
         </a-assets>
 
-        <!-- Ficha 1: Sano (Asociada al Ruscus en estado óptimo) -->
+        <!-- Ficha 1: Sano (Ruscus) -->
         <a-marker type="pattern" url="markers/pattern-Ruscus_plantas_en_estado_optimo.patt">
             <a-image src="#ficha-sano" position="0 0.5 0" rotation="-90 0 0" scale="2 2 2"></a-image>
         </a-marker>
 
-        <!-- Ficha 2: Vigilar (Asociada al Eucalipto Baby Blue) -->
+        <!-- Ficha 2: Vigilar (Eucalipto Baby Blue) -->
         <a-marker type="pattern" url="markers/pattern-Eucalypto_baby_blue_Vigilancia.patt">
             <a-image src="#ficha-vigilar" position="0 0.5 0" rotation="-90 0 0" scale="2 2 2"></a-image>
         </a-marker>
 
-        <!-- Ficha 3: Actuar ya (Asociada al Liriope) -->
+        <!-- Ficha 3: Actuar ya (Liriope) -->
         <a-marker type="pattern" url="markers/pattern-Estado_actuar_ya_Liriope.patt">
-            <a-marker-camera>
             <a-image src="#ficha-actuar" position="0 0.5 0" rotation="-90 0 0" scale="2 2 2"></a-image>
         </a-marker>
 
-        <!-- Ficha 4: Cuarentena (Asociada a Pasar a cuarentena) -->
-        <a-marker type="pattern" url="markers/pattern-Pasar_a_curentena.patt">
+        <!-- Ficha 4: Cuarentena (CORREGIDO: Coincide exactamente con tu archivo) -->
+        <a-marker type="pattern" url="markers/pattern-Pasar a curentena.patt">
             <a-image src="#ficha-cuarentena" position="0 0.5 0" rotation="-90 0 0" scale="2 2 2"></a-image>
         </a-marker>
 
